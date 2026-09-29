@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Green Desk</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=Noto+Sans+SC:wght@400;500&display=swap">
+<style>
+  :root{ --paper:#FBF8F2; --ink:#221C14; --ink-soft:#6B6255; --ocean:#1B5E56; --line:#E6DFD0; }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){ --paper:#14180F; --ink:#ECE6D6; --ink-soft:#A79C87; --ocean:#5FBBAE; --line:#2A2C22; }
+  }
+  :root[data-theme="dark"]{ --paper:#14180F; --ink:#ECE6D6; --ink-soft:#A79C87; --ocean:#5FBBAE; --line:#2A2C22; }
+  *{box-sizing:border-box}
+  body{ margin:0; background:var(--paper); color:var(--ink); font-family:"Noto Sans SC",-apple-system,sans-serif; }
+  .wrap{ max-width:680px; margin:0 auto; padding:56px 24px 72px; }
+  h1{ font-family:"Noto Serif SC",serif; font-size:26px; margin:0 0 6px; }
+  .tag{ color:var(--ink-soft); font-size:14px; margin-bottom:36px; }
+  ul{ list-style:none; margin:0; padding:0; }
+  li{ padding:18px 0; border-bottom:1px solid var(--line); }
+  li a{ font-family:"Noto Serif SC",serif; font-weight:600; font-size:17px; color:var(--ink); text-decoration:none; }
+  li a:hover{ color:var(--ocean); }
+  li .meta{ font-size:13px; color:var(--ink-soft); margin-top:4px; }
+  .empty{ color:var(--ink-soft); font-size:14px; padding:24px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Green Desk</h1>
+  <div class="tag">绿色发展与关键矿产深度报道 · 自动化生成</div>
+  <ul id="list">
+    <li class="empty">尚无已发布报道。</li>
+  </ul>
+</div>
+</body>
+</html>
